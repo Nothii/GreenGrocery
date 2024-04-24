@@ -72,3 +72,16 @@ app-login {
         height: 80%;
     }
 }
+
+.star-rating {
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .star-rating .filled {
+    color: #ffc107;
+  }
+  

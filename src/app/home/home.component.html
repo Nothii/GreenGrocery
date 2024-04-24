@@ -11,7 +11,7 @@
               <p class="product-description" [ngStyle]="{'color': isDarkTheme ? '#000000' : '#ffffff'}">{{ product.description | translate}}</p>
               <p class="product-price" [ngStyle]="{'color': isDarkTheme ? '#000000' : '#ffffff'}">{{ product.price | currency:'USD':'symbol':'1.2-2' }}</p>
               <!-- Display product variants if available -->
-              <div *ngIf="product.variants && product.variants.length > 0" class="variants-container">
+              <div *ngIf="product.variants && product.variants.length > 0; else noVariantPlaceholder" class="variants-container">
                 <div class="variants-scroll-container">
                   <ul class="variants-images">
                     <li class="list-element" *ngFor="let variant of product.variants">
@@ -20,6 +20,9 @@
                   </ul>
                 </div>
               </div>
+              <ng-template #noVariantPlaceholder>
+                <div class="variants-placeholder" style="height: 50px;"></div>
+              </ng-template>              
               <div class="button-product">
                 <button class="buy-now" [ngStyle]="{'background-color': isDarkTheme ? '#3b5b2d' : '#5eda5e', 'color': isDarkTheme ? '#ffffff' : '#000000'}">{{ 'buy_now' | translate }}</button>
               </div>                                   

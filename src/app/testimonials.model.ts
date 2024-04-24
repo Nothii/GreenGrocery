@@ -4,4 +4,5 @@ export interface Testimonials {
   description: string;
   imgSrc: string;
   text: string;
+  rating: number;
 }

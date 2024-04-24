@@ -40,22 +40,25 @@ export class TestimonialsService {
           id: 1,
           username: "John Doe",
           description: translations['testimonials.testimonial1.description'],
-          imgSrc: '',
-          text: ''
+          imgSrc: 'assets/img/user-icons/male.png',
+          text: '',
+          rating: 5
         },
         {
           id: 2,
           username: "Jane Doe",
-          description: '',
-          imgSrc: '',
-          text: ''
+          description: translations['testimonials.testimonial2.description'],
+          imgSrc: 'assets/img/user-icons/female.png',
+          text: '',
+          rating: 5
         },
         {
           id: 3,
           username: "James Doe",
-          description: '',
-          imgSrc: '',
-          text: ''
+          description: translations['testimonials.testimonial3.description'],
+          imgSrc: 'assets/img/user-icons/blank-image.png',
+          text: '',
+          rating: 5
         },
       ];
       this.testimonialsSubject.next(testimonials);

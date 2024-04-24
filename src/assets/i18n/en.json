@@ -39,7 +39,7 @@
         "description": "I really love your products."
       },
       "testimonial2": {
-        "username": "John Doe",
+        "username": "Jane Doe",
         "description": "I really love your products."
       },
       "testimonial3": {
@@ -59,6 +59,11 @@
     "title_4": "Innovating for a Healthy Future",
     "description_4": "Looking to the future, GoodFellas continues to innovate. We're expanding our offerings to include organic artisanal products from local producers, hosting cooking classes, and leading community wellness events. Our recent initiatives, such as our zero-waste program and solar-powered delivery services, underscore our ongoing commitment to environmental stewardship.",
     "title_5": "Join Our Journey",
-    "description_5": "This narrative not only details the origins and growth of GoodFellas Greengrocery but also highlights its core values and future direction, aiming to connect emotionally with your customers and reinforce their loyalty to your brand."
+    "description_5": "This narrative not only details the origins and growth of GoodFellas Greengrocery but also highlights its core values and future direction, aiming to connect emotionally with your customers and reinforce their loyalty to your brand.",
+    "who_are_we": "Who Are We?",
+    "address": "Address",
+    "our_history":"Our History",
+    "testimonialsmenu":"Testimonials",
+    "get_help": "Get Help"
   }
   

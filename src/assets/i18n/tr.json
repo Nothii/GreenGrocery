@@ -36,15 +36,15 @@
     "testimonials": {
       "testimonial1": {
         "username": "John Doe",
-        "description": "I really love your products."
+        "description": "Ürünlerinizi çok seviyorum."
       },
       "testimonial2": {
-        "username": "John Doe",
-        "description": "I really love your products."
+        "username": "Jane Doe",
+        "description": "Ürünlerinizi çok seviyorum."
       },
       "testimonial3": {
-        "username": "John Doe",
-        "description": "I really love your products."
+        "username": "James Doe",
+        "description": "Ürünlerinizi çok seviyorum."
       }
     },
     "testimonials_title": "Yorumlar",
@@ -59,6 +59,11 @@
     "title_4": "Sağlıklı Bir Gelecek İçin İnovasyon",
     "description_4": "Geleceğe bakan GoodFellas yeniliklere devam ediyor. Tekliflerimizi, yerel üreticilerden gelen organik el yapımı ürünleri, yemek pişirme derslerine ev sahipliği yapmayı ve önde gelen topluluk sağlıklı yaşam etkinliklerini içerecek şekilde genişletiyoruz. Sıfır atık programımız ve güneş enerjisiyle çalışan teslimat hizmetlerimiz gibi son girişimlerimiz, çevre yönetimine yönelik süregelen kararlılığımızın altını çiziyor.",
     "title_5": "Yolculuğumuza Katılın",
-    "description_5": "Bu anlatım, yalnızca GoodFellas Manav'ın kökenlerini ve büyümesini ayrıntılarıyla anlatmakla kalmıyor, aynı zamanda müşterilerinizle duygusal bağ kurmayı ve markanıza olan bağlılıklarını güçlendirmeyi amaçlayan temel değerlerini ve gelecekteki yönünü de vurguluyor."
+    "description_5": "Bu anlatım, yalnızca GoodFellas Manav'ın kökenlerini ve büyümesini ayrıntılarıyla anlatmakla kalmıyor, aynı zamanda müşterilerinizle duygusal bağ kurmayı ve markanıza olan bağlılıklarını güçlendirmeyi amaçlayan temel değerlerini ve gelecekteki yönünü de vurguluyor.",
+    "who_are_we": "Biz Kimiz?",
+    "address": "Adres",
+    "our_history":"Hikayemiz",
+    "testimonialsmenu":"Yorumlar",
+    "get_help": "Yardım Alın"
   }
   

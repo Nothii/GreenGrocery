@@ -75,6 +75,7 @@ export class TestimonialComponent implements OnInit, OnDestroy {
     this.isDarkTheme = !this.isDarkTheme;
     localStorage.setItem('theme', this.isDarkTheme ? 'Dark' : 'Light');
     this.testimonialBackground();
+    this.applyThemeStyles();
   }
 
   private loadInitialTheme() {
@@ -99,6 +100,22 @@ export class TestimonialComponent implements OnInit, OnDestroy {
 
   private applyThemeStyles() {
     const backgroundColor = this.isDarkTheme ? '#3b5b2d' : '#5eda5e';
+    const textColor = this.isDarkTheme ? '#000000' : '#ffffff'; // Define text color based on theme
+
     document.documentElement.style.setProperty('--background-color', backgroundColor);
+    
+    // Select all elements with class 'username' and 'description'
+    const usernames = document.querySelectorAll('.username');
+    const descriptions = document.querySelectorAll('.description');
+
+    // Apply text color to usernames
+    usernames.forEach((elem) => {
+      this.renderer.setStyle(elem, 'color', textColor);
+    });
+
+    // Apply text color to descriptions
+    descriptions.forEach((elem) => {
+      this.renderer.setStyle(elem, 'color', textColor);
+    });
   }
 }

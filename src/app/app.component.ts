@@ -113,9 +113,22 @@ export class AppComponent implements OnInit, ViewChild, AfterViewInit {
 
   private testimonialBackground() {
     const backgroundColor = this.isDarkTheme ? '#5eda5e' : '#3b5b2d';
+    const textColor = this.isDarkTheme ? '#000000' : '#ffffff';
     const testimonialContents = document.querySelectorAll('.testimonial-content');
     testimonialContents.forEach(content => {
       this.renderer.setStyle(content, 'background-color', backgroundColor);
+    }); 
+    const usernames = document.querySelectorAll('.username');
+    const descriptions = document.querySelectorAll('.description');
+
+    // Apply text color to usernames
+    usernames.forEach((elem) => {
+      this.renderer.setStyle(elem, 'color', textColor);
+    });
+
+    // Apply text color to descriptions
+    descriptions.forEach((elem) => {
+      this.renderer.setStyle(elem, 'color', textColor);
     });
   }
   

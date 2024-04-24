@@ -33,4 +33,16 @@ ul {
 
 .footer-col {
     width: 20%;
+    padding: 1%;
+}
+
+@media screen and (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .footer-col {
+        width: auto;
+        padding-left: 10%;
+    }
 }
