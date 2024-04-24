@@ -7,8 +7,10 @@ import { LoginComponent } from './login/login.component';
 import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { TestimonialCommentComponent } from './testimonial-comment/testimonial-comment.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 const routes: Routes = [
+  { path: 'shipping', component:ShippingComponent },
   { path: '', component:HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component:HomeComponent },

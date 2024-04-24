@@ -25,6 +25,7 @@ import { TestimonialComponent } from './testimonials/testimonials.component';
 import { ForgotYourPasswordComponent } from './forgot-your-password/forgot-your-password.component';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { TestimonialCommentComponent } from './testimonial-comment/testimonial-comment.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     StarRatingComponent,
     ForgotYourPasswordComponent,
     OurHistoryComponent,
-    TestimonialCommentComponent
+    TestimonialCommentComponent,
+    ShippingComponent
   ],
   imports: [
     CarouselModule,

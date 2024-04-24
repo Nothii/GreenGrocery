@@ -7,7 +7,7 @@
         <input class="email" type="text" placeholder="E-mail" id="email" name="email" required>
         <input class="password" type="password" placeholder="Password" id="password" name="password" required>
         <input class="address" type="address" placeholder="Address" id="address" name="address" required>
-        <input class="phonenumber" type="tel" id="phone" #phone pattern="\d*" (keydown)="onlyNumbersAllowed($event)" required>
+        <input type="tel" id="phone" formControlName="phone" #phone pattern="\d*" (keydown)="onlyNumbersAllowed($event)" required>
         <button type="submit" class="submit-button">Submit</button>
     </div>
     </div>
