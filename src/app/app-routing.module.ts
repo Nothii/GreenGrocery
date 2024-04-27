@@ -8,10 +8,14 @@ import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { TestimonialCommentComponent } from './testimonial-comment/testimonial-comment.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { ProductSafetyComponent } from './product-safety/product-safety.component';
+import { OrderingPolicyComponent } from './ordering-policy/ordering-policy.component';
 
 const routes: Routes = [
+  { path: 'ordering-policy', component:OrderingPolicyComponent },
   { path: 'shipping', component:ShippingComponent },
   { path: '', component:HomeComponent },
+  { path: 'product-safety', component:ProductSafetyComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component:HomeComponent },
   { path: 'forgot-your-password', component: ForgotYourPasswordComponent },

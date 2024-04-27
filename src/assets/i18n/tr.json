@@ -64,6 +64,9 @@
     "address": "Adres",
     "our_history":"Hikayemiz",
     "testimonialsmenu":"Yorumlar",
-    "get_help": "Yardım Alın"
+    "get_help": "Yardım Alın",
+    "shipping_title": "Kapınıza Gelen Tazelik",
+    "shipping_text": "GoodFellas Green Grocery olarak zamanınızın değerli olduğunu ve taze, sağlıklı ürünlere erişimin bir öncelik olduğunu anlıyoruz. Bu nedenle pazarımızın en taze meyve ve sebzelerini doğrudan evinize getiren kişiselleştirilmiş, çevre dostu bir teslimat hizmeti sunmaktan mutluluk duyuyoruz.",
+    "shipping": "Nakliyat"
   }
   

@@ -32,6 +32,8 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { TestimonialCommentComponent } from './testimonial-comment/testimonial-comment.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { firebaseConfig } from 'src/envs/environment';
+import { ProductSafetyComponent } from './product-safety/product-safety.component';
+import { OrderingPolicyComponent } from './ordering-policy/ordering-policy.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -56,6 +58,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     OurHistoryComponent,
     TestimonialCommentComponent,
     ShippingComponent,
+    ProductSafetyComponent,
+    OrderingPolicyComponent,
   ],
   imports: [
     CarouselModule,
