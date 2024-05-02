@@ -34,6 +34,8 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { firebaseConfig } from 'src/envs/environment';
 import { ProductSafetyComponent } from './product-safety/product-safety.component';
 import { OrderingPolicyComponent } from './ordering-policy/ordering-policy.component';
+import { RefundPolicyComponent } from './refund-policy/refund-policy.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -60,6 +62,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ShippingComponent,
     ProductSafetyComponent,
     OrderingPolicyComponent,
+    RefundPolicyComponent,
+    ShoppingCartComponent,
   ],
   imports: [
     CarouselModule,

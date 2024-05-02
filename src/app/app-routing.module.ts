@@ -10,9 +10,11 @@ import { TestimonialCommentComponent } from './testimonial-comment/testimonial-c
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProductSafetyComponent } from './product-safety/product-safety.component';
 import { OrderingPolicyComponent } from './ordering-policy/ordering-policy.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 const routes: Routes = [
   { path: 'ordering-policy', component:OrderingPolicyComponent },
+  { path: 'shopping-cart', component:ShoppingCartComponent },
   { path: 'shipping', component:ShippingComponent },
   { path: '', component:HomeComponent },
   { path: 'product-safety', component:ProductSafetyComponent },

@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Renderer2 } from '@angular/core';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-home',
@@ -39,7 +40,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     nav: false // Disable navigation arrows
   }
 
-  constructor(private productService: ProductService, public translate: TranslateService, private renderer: Renderer2) {
+  constructor(private productService: ProductService, public translate: TranslateService, private renderer: Renderer2, private cartService: CartService) {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
     translate.addLangs(['en', 'tr']);
@@ -56,6 +57,10 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     // Check theme after view initialization
     this.checkDarkTheme();
+  }
+
+  addToCart(product: any) {
+    this.cartService.addToCart(product);
   }
 
   ngOnInit(): void {

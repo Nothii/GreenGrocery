@@ -23,8 +23,12 @@
               <ng-template #noVariantPlaceholder>
                 <div class="variants-placeholder" style="height: 50px;"></div>
               </ng-template>              
-              <div class="button-product">
-                <button class="buy-now" [ngStyle]="{'background-color': isDarkTheme ? '#3b5b2d' : '#5eda5e', 'color': isDarkTheme ? '#ffffff' : '#000000'}">{{ 'buy_now' | translate }}</button>
+              <div class="button-product" [routerLink]="'/shopping-cart'">
+                <button class="buy-now" 
+                [ngStyle]="{'background-color': isDarkTheme ? '#3b5b2d' : '#5eda5e', 'color': isDarkTheme ? '#ffffff' : '#000000'}" 
+                (click)="addToCart(product)">
+                  {{ 'buy_now' | translate }}
+                </button>              
               </div>                                   
             </div>
           </div>

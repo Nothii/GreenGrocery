@@ -24,7 +24,9 @@
                     <a [routerLink]="'/not-registered-sign-in'"><img class="register-icon" src="assets/img/register.png">{{ 'register' | translate }}</a>
                 </li>
                 <li>
-                    <img class="shopping-cart" src="assets/img/shopping-cart.png">
+                    <div class="cart-icon" [routerLink]="'/shopping-cart'">
+                        <i class="fa fa-shopping-cart" style="color: rgb(94, 218, 94);"></i>
+                    </div>
                 </li>
                 <li>
                     <form class="languages">
