@@ -36,6 +36,8 @@ import { ProductSafetyComponent } from './product-safety/product-safety.componen
 import { OrderingPolicyComponent } from './ordering-policy/ordering-policy.component';
 import { RefundPolicyComponent } from './refund-policy/refund-policy.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CommonModule } from '@angular/common';
+import { FruitsComponent } from './fruits/fruits.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -54,6 +56,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoginComponent,
     FooterComponent,
     HeaderComponent,
+    FruitsComponent,
     WhoAreWeComponent,
     StarRatingComponent,
     ForgotYourPasswordComponent,
@@ -72,6 +75,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    CommonModule,
     RouterModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
