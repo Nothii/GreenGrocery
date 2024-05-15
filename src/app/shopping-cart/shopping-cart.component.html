@@ -21,5 +21,6 @@
         <button (click)="removeFromCart(item.id)" class="remove-button">Remove</button>
       </div>
     </ng-template>
+    <button *ngIf="cartItems.length > 0" (click)="confirmCheckout()" class="checkout-button">Checkout</button>
   </div>
   

@@ -7,11 +7,11 @@ import { Renderer2 } from '@angular/core';
 import { CartService } from '../cart.service';
 
 @Component({
-  selector: 'app-fruits',
-  templateUrl: './fruits.component.html',
-  styleUrls: ['./fruits.component.css']
+  selector: 'app-vegetables',
+  templateUrl: './vegetables.component.html',
+  styleUrls: ['./vegetables.component.css']
 })
-export class FruitsComponent implements OnInit, AfterViewInit, OnDestroy {
+export class VegetablesComponent implements OnInit, AfterViewInit, OnDestroy {
   
   products: Product[] = [];
   isDarkTheme: boolean = false;
@@ -24,7 +24,7 @@ export class FruitsComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.langChangeSubscription = this.translate.onLangChange.subscribe(() => {
       // Update fruits after language change
-      this.updateFruits();
+      this.updateVegetables();
       // Check theme after language change
       this.checkDarkTheme();
       this.isDarkTheme = localStorage.getItem('theme') === "Dark";
@@ -44,7 +44,7 @@ export class FruitsComponent implements OnInit, AfterViewInit, OnDestroy {
     // Check theme on component initialization
     this.checkDarkTheme();
     // Update products on component initialization
-    this.updateFruits();
+    this.updateVegetables();
     this.cardTitle();
   }
 
@@ -61,7 +61,7 @@ export class FruitsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.switchLanguage(lang);
   }
 
-  private updateFruits() {
+  private updateVegetables() {
     this.products = this.productService.getProducts();
   }
 
@@ -100,15 +100,15 @@ export class FruitsComponent implements OnInit, AfterViewInit, OnDestroy {
   
   private cardTitle() {
   const color = this.isDarkTheme ? '#000000' : '#ffffff';
-  const fruitTitles = document.querySelectorAll('.fruit-title');
+  const fruitTitles = document.querySelectorAll('.vegetable-title');
   fruitTitles.forEach((title) => {
     this.renderer.setStyle(title, 'color', color);
   });
-  const fruitDescriptions = document.querySelectorAll('.fruit-description');
+  const fruitDescriptions = document.querySelectorAll('.vegetable-description');
   fruitDescriptions.forEach((description) => {
     this.renderer.setStyle(description, 'color', color);
   });
-  const fruitPrices = document.querySelectorAll('.fruit-price');
+  const fruitPrices = document.querySelectorAll('.vegetable-price');
   fruitPrices.forEach((price) => {
     this.renderer.setStyle(price, 'color', color);
   });

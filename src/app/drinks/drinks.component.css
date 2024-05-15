@@ -3,7 +3,7 @@ img {
     width: 50%;
 }
 
-.fruit-card {
+.drink-card {
     width: 300px;
     padding: 3%;
     border-radius: 5%;
@@ -14,7 +14,7 @@ ul {
     padding-bottom: 5%;
 }
 
-.button-fruit {
+.button-drink {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +83,7 @@ ul {
         gap: 3%;
     }
 
-    .fruit-card {
+    .drink-card {
         padding: 10%;
         border-radius: 5%;
         list-style: none;

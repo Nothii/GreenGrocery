@@ -34,4 +34,16 @@ export class ShoppingCartComponent implements OnInit {
       this.cartService.updateCartItem(item);
     }
   }
+
+  confirmCheckout() {
+    if (window.confirm('Are you sure you want to proceed to checkout?')) {
+      // Call the method to proceed to checkout
+      this.proceedToCheckout();
+    }
+  }
+  
+  proceedToCheckout() {
+    // Implement the logic to proceed to checkout
+    alert("Thank you.");
+    this.cartItems.splice(0, this.cartItems.length);  }
 }

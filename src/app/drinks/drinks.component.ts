@@ -7,11 +7,11 @@ import { Renderer2 } from '@angular/core';
 import { CartService } from '../cart.service';
 
 @Component({
-  selector: 'app-fruits',
-  templateUrl: './fruits.component.html',
-  styleUrls: ['./fruits.component.css']
+  selector: 'app-drinks',
+  templateUrl: './drinks.component.html',
+  styleUrls: ['./drinks.component.css']
 })
-export class FruitsComponent implements OnInit, AfterViewInit, OnDestroy {
+export class DrinksComponent implements OnInit, AfterViewInit, OnDestroy {
   
   products: Product[] = [];
   isDarkTheme: boolean = false;

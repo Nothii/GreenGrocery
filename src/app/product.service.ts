@@ -42,20 +42,32 @@ export class ProductService {
           variants: [
             { id: 1, name: 'Variant 1', images: "assets/img/products/apple/starking-apple.png" },
             { id: 2, name: 'Variant 2', images: "assets/img/products/apple/golden-apple.png" },
-            { id: 3, name: 'Variant 3', images: "assets/img/products/apple/granny-smith-apple.png" }
-          ]
+            { id: 3, name: 'Variant 3', images: "assets/img/products/apple/granny-smith-apple.png" },
+          ],
+          isFruit: true,
+          isVegetable: false,
+          isDrink: false
         },
         {
           id: 2, name: translations['products.product2.name'], description: translations['products.product2.description'], price: 20, imgSrc: 'https://example.com/product2.jpg',
-          variants: []
+          variants: [],
+          isFruit: false,
+          isVegetable: true,
+          isDrink: false
         },
         {
           id: 3, name: translations['products.product3.name'], description: translations['products.product3.description'], price: 15, imgSrc: 'https://example.com/product3.jpg',
-          variants: []
+          variants: [],
+          isFruit: false,
+          isVegetable: false,
+          isDrink: true
         },
         {
           id: 4, name: translations['products.product4.name'], description: translations['products.product4.description'], price: 12.5, imgSrc: 'https://example.com/product4.jpg',
-          variants: []
+          variants: [],
+          isFruit: true,
+          isVegetable: false,
+          isDrink: false
         },
       ];
       this.productsSubject.next(products);

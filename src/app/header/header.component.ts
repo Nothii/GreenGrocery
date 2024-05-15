@@ -82,8 +82,12 @@ export class HeaderComponent {
   private cardBackground() {
     const backgroundColor = this.isDarkTheme ? '#5eda5e' : '#3b5b2d';
     const cardContents = document.querySelectorAll('.card-content');
+    const cardContents2 = document.querySelectorAll('.fruit-card');
     cardContents.forEach(cardContent => {
       this.renderer.setStyle(cardContent, 'background-color', backgroundColor);
+    });
+    cardContents2.forEach(cardContent2 => {
+      this.renderer.setStyle(cardContent2, 'background-color', backgroundColor);
     });
   }
 
@@ -107,6 +111,18 @@ export class HeaderComponent {
     });
     const productPrices = document.querySelectorAll('.product-price');
   productPrices.forEach((price) => {
+    this.renderer.setStyle(price, 'color', color);
+  });
+  const fruitTitles = document.querySelectorAll('.fruit-title');
+  fruitTitles.forEach((title) => {
+      this.renderer.setStyle(title, 'color', color);
+    });
+    const fruitDescriptions = document.querySelectorAll('.fruit-description');
+    fruitDescriptions.forEach((description) => {
+      this.renderer.setStyle(description, 'color', color);
+    });
+    const fruitPrices = document.querySelectorAll('.fruit-price');
+    fruitPrices.forEach((price) => {
     this.renderer.setStyle(price, 'color', color);
   });
   }

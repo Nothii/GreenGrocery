@@ -11,4 +11,7 @@ export interface Product {
   price: number;
   imgSrc: string;
   variants: Variant[];
+  isFruit: boolean;
+  isVegetable: boolean;
+  isDrink: boolean;
 }
