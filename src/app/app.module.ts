@@ -38,9 +38,9 @@ import { RefundPolicyComponent } from './refund-policy/refund-policy.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CommonModule } from '@angular/common';
 import { FruitsComponent } from './fruits/fruits.component';
-import { ProductInterfaceComponent } from './product-interface/product-interface.component';
 import { VegetablesComponent } from './vegetables/vegetables.component';
 import { DrinksComponent } from './drinks/drinks.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -69,10 +69,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProductSafetyComponent,
     OrderingPolicyComponent,
     RefundPolicyComponent,
+    CreditCardComponent,
     ShoppingCartComponent,
-    ProductInterfaceComponent,
     VegetablesComponent,
-    DrinksComponent,
+    DrinksComponent
   ],
   imports: [
     CarouselModule,

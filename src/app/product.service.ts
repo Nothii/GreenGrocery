@@ -33,6 +33,10 @@ export class ProductService {
       'products.product3.description',
       'products.product4.name',
       'products.product4.description',
+      'products.product5.name',
+      'products.product5.description',
+      'products.product6.name',
+      'products.product6.description',
     ];
     // Logic to fetch products from an API or other data source
     this.translate.get(productKeys).subscribe(translations => {
@@ -69,6 +73,20 @@ export class ProductService {
           isVegetable: false,
           isDrink: false
         },
+        {
+          id: 5, name: translations['products.product5.name'], description: translations['products.product5.description'], price: 10.5, imgSrc: 'https://example.com/product5.jpg',
+          variants: [],
+          isFruit: true,
+          isVegetable: false,
+          isDrink: false
+        },
+        {
+          id: 6, name: translations['products.product6.name'], description: translations['products.product6.description'], price: 10.5, imgSrc: 'https://example.com/product6.jpg',
+          variants: [],
+          isFruit: true,
+          isVegetable: false,
+          isDrink: false
+        }
       ];
       this.productsSubject.next(products);
     });

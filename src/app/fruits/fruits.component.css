@@ -81,6 +81,7 @@ ul {
         display: grid;
         grid-template-columns: auto;
         gap: 3%;
+        padding-bottom: 30%;
     }
 
     .fruit-card {

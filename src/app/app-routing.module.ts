@@ -12,7 +12,7 @@ import { ProductSafetyComponent } from './product-safety/product-safety.componen
 import { OrderingPolicyComponent } from './ordering-policy/ordering-policy.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FruitsComponent } from './fruits/fruits.component';
-import { ProductInterfaceComponent } from './product-interface/product-interface.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
 import { VegetablesComponent } from './vegetables/vegetables.component';
 import { DrinksComponent } from './drinks/drinks.component';
 
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'fruits', component:FruitsComponent },
   { path: 'drinks', component:DrinksComponent },
   { path: 'vegetables', component:VegetablesComponent },
-  { path: 'product-interface', component:ProductInterfaceComponent },
+  { path: 'credit-card', component:CreditCardComponent },
   { path: 'ordering-policy', component:OrderingPolicyComponent },
   { path: 'shopping-cart', component:ShoppingCartComponent },
   { path: 'shipping', component:ShippingComponent },
